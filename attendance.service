@@ -1,0 +1,12 @@
+[Unit]
+Description=attendance
+After=multi-user.target
+
+[Service]
+User=root
+Group=root
+ExecStart=/usr/bin/python3 /home/wgrover/attendance/attendance.py
+
+[Install]
+WantedBy=multi-user.target
+
