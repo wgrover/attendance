@@ -1,7 +1,9 @@
 import keyboard  # pip install keyboard
-import time
+import time, random, string
 
-f = open("/home/wgrover/attendance/out.txt", "a")
+f=open('/home/wgrover/attendance/'+
+        "".join(random.choices(string.ascii_lowercase+string.digits, k=8))+
+        ".csv", "w")
 
 def key_press(key):
     print(key.name)

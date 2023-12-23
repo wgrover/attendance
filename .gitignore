@@ -1,5 +1,6 @@
 .DS_Store
 out.txt
+*.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
